@@ -60,7 +60,7 @@ echo -e "													"
 
 read -p "Press [Enter] key to start the scan..."
 
-nmap -sV -T4 -Pn -v -A --open -p- $TARGET -oX $TARGET.xml
+nmap -T4 -Pn -v -O --open -p- $TARGET -oX $TARGET.xml
 port_21=`grep 'portid="21"' $TARGET.xml | grep open`
 port_22=`grep 'portid="22"' $TARGET.xml | grep open`
 port_25=`grep 'portid="25"' $TARGET.xml | grep open`
