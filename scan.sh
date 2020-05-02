@@ -199,7 +199,6 @@ fi
 
 ####################### End Web enumeration ##########################
 
-read -p "Press [Enter] key to start Dirb..."
 
 ####################### Dirb start ? #################################
 
